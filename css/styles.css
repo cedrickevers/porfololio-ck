@@ -1,0 +1,50 @@
+.overlay{
+  width: 100%;
+  position:absolute ;
+  z-index: 3;
+  background-color: rgba(0 , 0 , 0 , 0.4);
+}
+ .slides-navigation a.prev,
+ .slides-navigation a.next {
+  width:45px;
+  height:45px;
+  background-size: cover ;
+  background-repeat: no-repeat;
+
+ }
+
+.slides-navigation a.prev{
+ left: 20px;
+ background-image:url("../img/arrow-left.png");
+
+}
+.slides-navigation a.next{
+ right: 20px;
+ background-image:url("../img/arrow-right.png");
+
+}
+  
+.title-message{
+  position: absolute;
+  width: 100px;
+  height: 250px;
+  margin-top:-125px;
+  top:50%;
+  left:50%;
+   z-index: 4;
+
+}
+.title-message .heading{
+  color: gold;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing:7px;
+}
+.title-message .heading .main{
+
+  font-size: 50px;
+}
+.title-message .heading .main{
+
+  font-size: 25px;
+}
