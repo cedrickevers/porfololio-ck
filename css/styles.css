@@ -1,3 +1,10 @@
+body{
+  font-size:16px;
+
+  color:#333;
+  background-color: #fff;
+  letter-spacing: 3px;
+}
 .overlay{
   width: 100%;
   position:absolute ;
@@ -51,9 +58,38 @@
 }
 
 /*SECTION ABOUT*/
+
 .section{
   padding: 100px 0;
 }
 .about-image{
   max-width: 100%;
+}
+/*SKILLS SECTION*/
+
+.skills-section{
+  background-color: #ff6b81;
+  color:#fff;
+}
+.skill, .chart{
+  text-align: center;
+}
+.chart{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  margin-left: 25px;
+}
+.chart{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.chart .percent{
+  display: inline-block;
+  line-height: 60;
+  font-size: 40px;
+  color: purple;
+
 }
