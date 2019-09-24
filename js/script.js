@@ -60,6 +60,11 @@ $(document).ready(function() {
 
 
 	});
+	$(".counter").each(function(){
+		const element =$(this);
+		let endVal = parseInt(element.text());
+		element.countup(endVal);
+	})
 
 
 });
