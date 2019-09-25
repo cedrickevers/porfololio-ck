@@ -6,8 +6,8 @@ $(document).ready(function() {
 		pagination: false
 	});
 
-	const typed = new Typed(".typed", {
-		strings: ["Action and turn based rpg.", "coding and SEO.", "Anime and series"],
+	var typed = new Typed(".typed", {
+		strings: ["Software Engineer.", "Web Developer.", "Student."],
 		typeSpeed: 70,
 		loop: true,
 		startDelay: 1000,
@@ -35,10 +35,9 @@ $(document).ready(function() {
 
 
 	
-
-
-	const skillsTopOffset = $(".skills-section").offset().top;
-
+	var skillsTopOffset = $(".skills-section").offset().top;
+	var statsTopOffset = $(".stats-section").offset().top;
+	var countUpFinished = false;
 	$(window).scroll(function() {
 
 		if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
@@ -54,33 +53,28 @@ $(document).ready(function() {
 		        	$(this.el).find('.percent').text(Math.round(percent));
 		        }
 		    });
-			
+
+
+		}
+
+
+		if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+			$(".counter").each(function() {
+				var element = $(this);
+				var endVal = parseInt(element.text());
+
+				element.countup(endVal);
+			})
+
+			countUpFinished = true;
 
 		}
 
 
 	});
-	$(".counter").each(function(){
-		const element =$(this);
-		let endVal = parseInt(element.text());
-		element.countup(endVal);
-	})
+
+	
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
