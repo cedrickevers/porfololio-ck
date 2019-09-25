@@ -189,8 +189,58 @@ text-align: center;
 padding-bottom: 40px;
 	
 }
+.items-container{
+	width: 100%;
+	text-align: center;
+}
+.items li{
+	display: inline-block;
+	margin-left: 10px;
+}
+.items .item {
+position: relative;
+overflow: hidden;
+}
+.items .icons   {
+ 	text-align:center;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin: -20px 0 -20px 0; 
+ 
 
+ }
 
+.items .icons i {
+	color:pink;
+	font-size:20px;
+
+}
+.items .icons a {
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	margin-left: 10px;
+}
+.items .img-overlay{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	    -webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
+
+}
+.items .item:hover .img-overlay{
+	opacity: 1;
+}
 
 
 
