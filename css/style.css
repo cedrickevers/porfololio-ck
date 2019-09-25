@@ -160,6 +160,14 @@ body {
     margin-left: -20%;
     color: #444;
 }
+
+.filter{
+	width: 100%;
+	text-align: center;
+
+}
+
+
 .filter a {
  color: #bdc3c7;
  border: 2px solid #bdc3c7;
@@ -173,6 +181,13 @@ body {
 	background-color: #e74c3c;
 	border-color:  #e74c3c;
 	color: #fff;
+}
+
+.section .heading {
+width: 100%;
+text-align: center;
+padding-bottom: 40px;
+	
 }
 
 
