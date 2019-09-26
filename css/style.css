@@ -197,6 +197,14 @@ padding-bottom: 40px;
 	display: inline-block;
 	margin-left: 10px;
 }
+.items li img{
+	width: 100%;
+    -webkit-transition: all 0.2s linear, 0.2s;
+    -moz-transition: all 0.2s linear, 0.2s;
+    -o-transition: all 0.2s linear, 0.2s;
+    -ms-transition: all 0.2s linear, 0.2s;
+    -transition: all 0.2s linear, 0.2s;
+}
 .items .item {
 position: relative;
 overflow: hidden;
@@ -271,7 +279,17 @@ overflow: hidden;
 }
 
 
+.items .item:hover{
+	 -webkit-transform:  scale(1.05, 1.05);
+    -moz-transform:  scale(1.05, 1.05);
+    -o-transform:  scale(1.05, 1.05);
+    -ms-transform:  scale(1.05, 1.05);
+    -transform:  scale(1.05, 1.05);
+}
 
+.items{
+	padding:0;
+}
 
 
 
