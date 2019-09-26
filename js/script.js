@@ -74,7 +74,7 @@ $(document).ready(function() {
 	});
 $("[data-fancybox").fancybox();
 	
-$("items").isotope({
+$(".items").isotope({
 	filter: '*',
 	animationOptions: {
 		duration: 1500,
@@ -86,7 +86,7 @@ $("#filters a ").click(function(){
 	$("#filters .current").removeClass("current");
 	$(this).addClass("current");
 	let select = $(this).attr("data-filter");
-	$("items").isotope({
+	$(".items").isotope({
 	filter: select,
 	animationOptions: {
 		duration: 1500,

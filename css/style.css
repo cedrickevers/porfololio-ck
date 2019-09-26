@@ -292,6 +292,24 @@ overflow: hidden;
 }
 
 
+#navigation{
+background-color: #e74c3c;
+padding: 20px 10px;
+}
+#navigation li {
+padding: 0 10px;
+}
+#navigation li a{
+color: #fff;
+}
+#navbar-brand, #navbar-brand:hover{
+	color: #fff;
+
+}
+.navbar-toggler-icon{
+	background: url("../img/icons/burger.png");
+	background-size:  100%;
+}
 
 
 
